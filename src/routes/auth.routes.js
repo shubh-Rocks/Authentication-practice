@@ -9,4 +9,10 @@ authRouter.post("/register", authController.register);
 // GET /api/auth/get-me
 authRouter.get("/get-me", authController.getMe);
 
+// GET /api/auth/RefreshToken
+authRouter.get("/Refresh-Token", authController.refreshToken);
+
+//GET /api/auth/logout
+authRouter.get("/logout", authController.logout);
+
 export default authRouter;
